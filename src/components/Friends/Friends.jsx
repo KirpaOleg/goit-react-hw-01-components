@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
   return (
-    <div>
       <div className={css.friends}>
         <ul className={css.friends__list}>
           {friends.map(({ avatar, name, isOnline, id }) => (
@@ -17,7 +16,6 @@ const FriendList = ({ friends }) => {
           ))}
         </ul>
       </div>
-    </div>
   );
 };
 
