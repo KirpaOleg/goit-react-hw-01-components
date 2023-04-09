@@ -1,0 +1,43 @@
+table {
+  margin-top: 30px;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  width: 400px;
+  background-color: white;
+}
+
+thead tr {
+  padding: 10px 0px;
+  background-color: rgb(6, 187, 216);
+}
+
+table th {
+  width: 130px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+table td {
+  padding: 6px 0px;
+  width: 130px;
+  font-weight: 500;
+  font-size: 15px;
+  color: gray;
+  text-align: center;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-around;
+}
+
+table tr:nth-child(2n) {
+  background-color: rgb(236, 241, 243);
+}
+
+table tr:not(:last-child) {
+  margin-bottom: 2px;
+}
