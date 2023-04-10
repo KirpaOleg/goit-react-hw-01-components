@@ -20,10 +20,14 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
-  id: PropTypes.string,
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default FriendList;
